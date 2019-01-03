@@ -22,7 +22,7 @@ Introduction Explanation:
 
  Lastly there will be an explanation about the metric coverage. The different types of coverage will be explained including how they subsume each-other. These types all measure how much of the system is being executed by the test suite. The helpfulness of coverage will then be described. Such as it aid developers in building their test suite, this is because they can ensure that their test suite reaches all corners of the system to check that nothing is behaving improperly. Lastly, the misleading nature of coverage will be discussed. Coverage is very good at describing how much of the system is being executed, but it may not fully indicate the fault detection effectiveness of the test suite, or how good the test suite is at finding errors. The reason being is that there could be tests that execute the different portions of code, but do not effectively test them. Thus leading to a situation that creates a pseudo-tested method.
 
-Pseudo-testedMethods [10 min]
+Pseudo-tested Methods [10 min]
  - What is a pseudo-tested method
   - A method that is being used in a test that will never fail.
   - Can be created very easily
@@ -34,6 +34,13 @@ Pseudo-testedMethods [10 min]
   - By hand
   - One tool if you are using Java
 
+Pseudo-tested Methods Explanation:
+ - In this section the definition of pseudo-tested method will be explained. Which is a method that is in a test that will always pass, regardless of the functionality of the method. Next it will be explained that they can be created very easily. A small code example will be used to show that a simple mistake can lead to the functionality of a method to not be tested.Please note: The code example will not be live coded, this will be accomplished through the slides.
+
+ Next the problem that pseudo-tested methods pose will be discussed. Since it is a recent discovery, there is the potential for there to be many in large systems, that have an extensive test suite. Which means that there are portions of systems that the true behavior of code is not being tested thoroughly, and could lead to unexpected system behaviors or crashes. Another side effect of pseudo-tested methods could occur if the developer is used Test-First Development. If the test case has been written incorrectly from the start, the developer will believe that they have finished development of a feature, when in reality that behavior is not being tested. If other portions of the system rely on this method, there could be a domino effect of errors.
+
+ Lastly, the current ways for detection will be mentioned. In the past, detecting pseudo-tested methods was very difficult, as it was really only possible manually or if the developer noticed that they made a mistake and the test suite did not accurately detect the error. The detection is made really difficult because of the nature of a pseudo-tested method. Why would a developer investigate something that is not broken. There have been steps made towards automatic detection, but in the Java programming language. Until Function-Fiasco.
+
 Automatic Detection [5 min]
  - Function-Fiasco
   - What is it
@@ -42,9 +49,23 @@ Automatic Detection [5 min]
  - Updated Metrics
   - Indicator of the fault detection effectiveness of the system
 
+Automatic Detection Explanation:
+ - In this section Function-Fiasco will be explained. Function-Fiasco is an automatic detection system for pseudo-tested methods in Python language that are being tested under the Pytest framework. It uses a combination of mutation testing, fuzzing, and fault injection to verify that tests are effectively testing the underlying methods of a system. It is intended to be used on the test suite of the system to ensure that the tests have been written in a way to check if the behavior of the system is being accurately detected so that unexpected errors will be caught and the test suite will fail.
+
+ Next the reasoning that the Python language was chosen will be discussed. Python is a very loosely typed language, which means that variables can be passed around and overwritten by different data types. Function-Fiasco was written in Python for this very reason. There are going to be many types of data being passed around and tested by the system, so it needed to be able to accomplish this task without the worry of an exception. Python also has an extensive list of open source packages that aided the development of Function-Fiasco.
+
+ Lastly, the updated metrics that Function-Fiasco produces will be mentioned. This section is to help developers understand that there is more than just coverage and mutation scores. There needed to be a metric that was the fault detection effectiveness of the test suite and this metric was skewed by the idea of pseudo-tested methods. So Function-Fiasco accounts for pseudo-tested methods and provides this metric.
+
 Conclusion [5 min]
  - Reiterate that the detection of pseudo-tested methods may lead to test suites that have increased fault detection effectiveness
- - Provide links to the github, slides, and the thesis
+ - Provide links to the GitHub, slides, and the thesis
  - Thank you
  - Questions if time permits
  - If not, explain where I can be found.
+
+Conclusion Explanation:
+ - The conclusion is just meant to wrap up all of the topic. The beginning will be dedicated to the reiteration about the importance of detecting pseudo-tested methods. The test suite of the system is a very important piece to ensure that the behavior is what was intended, but if the tests in the suite have been written incorrectly, the testing phase of the development cycle will be less effective. This could lead to large scale systems being very unstable because of the complexity of them.
+
+ Next I will talk about where all of the resources that were mentioned in the talk can be found. This includes the GitHub, the slides, and the full thesis that was written on the subject.
+
+ Lastly, if there is an avenue to accept questions, this is when this would occur. Otherwise, it will be explained to people where questions an be asked outside of the talk.
