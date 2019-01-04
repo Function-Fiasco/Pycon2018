@@ -1,22 +1,33 @@
 <!-- The “outline” is a skeleton of your talk that is as detailed as possible, including rough timings or estimates for different sections. If requesting a 45 minute slot, please describe what content would appear in the 45 minute version but not a 30 minute version, either within the outline or in a paragraph at the end.
 
-Please do not include any personally identifiable information. The initial round of reviews are annonymous, and this field will visible to reviewers.
+Please do not include any personally identifiable information. The initial round of reviews are anonymous, and this field will visible to reviewers.
 
 Committee note: The outline is extremely important for the program committee to understand what the content and structure of your talk will be. The timings/percentages help us compare multiple talks that might have a similar abstract. We know that they are estimates and only capture your view at this moment in time and are likely to change before PyCon. We hope that writing the outline is helpful to you as well, to organize and clarify your thoughts for your talk! The outline will not be shared with conference attendees. -->
 
-Introduction [10 min]
+<!-- TODO: I suggest that you only make this an outline and then put the details in
+the description. -->
+
+<!-- TODO: I judge that this is too detailed and hard to follow. -->
+
+<!-- TODO: Avoid the use of passive voice! It is confusing! -->
+
+- Introduction [10 min]
  - Testing
     - Process of software testing will be explained
     - Why it is an important part of the development cycle
  - Why testing is so important
     - Explain the benefits of software Testing
- - coverage
+ - Define coverage and explain its benefits
     - What is coverage
     - How is it helpful
     - How can it be misleading
 
 Introduction Explanation:
- - In the introduction, the process of Software testing will be explained. This includes how testing works, its role in the development cycle, and what unit testing is. This is important as it will help the attendees that are on the beginner level understand what the purpose of testing is.
+
+ - In the introduction, the process of Software testing will be explained. This
+   includes how testing works, its role in the development cycle, and what unit
+   testing is. This is important as it will help the attendees that are on the
+   beginner level understand what the purpose of testing is.
 
  Next the importance of testing will be emphasized. The reasoning behind this is because testing can have a very positive impact on the stability of a system. Testing can also provide a way for developers to know if they have implemented their features correctly, as in they can check to make sure that they didn't change the way that the previous features work and that they will know if their current feature is behaving properly.
 
