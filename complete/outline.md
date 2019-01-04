@@ -13,7 +13,7 @@ Introduction [10 min]
  - Define coverage and explain its benefits
     - What is coverage
     - How is it helpful
-    - How can it be misleading
+    - How it can be sometimes misleading
 
 Pseudo-tested Methods [10 min]
  - What is a pseudo-tested method
