@@ -12,37 +12,16 @@ are anonymous, and this field will visible to reviewers. -->
 
 <!-- TODO: The definition of "psuedo-tested" method is not yet clear -->
 
-One of the most important phases of the development cycle is the testing phase.
-This is where a developer will be able to know if they have implemented what
-they are working on correctly. One major question though is "Are the tests
-written correctly?" Developers can rely on coverage as a metric to determine how
-much of the system is being executed during the testing phase, but it may not
-always be a good indicator of the fault detection effectiveness of a test suite.
-A reason that this could be the case is because a test has not been written very
-well and creates a scenario that is called a pseudo-tested method. A
-pseudo-tested method, simply put, is a method that is being used in a test that
-will never fail. Meaning that the method is being executed, but not tested
-effectively.
+One of the most important phases of the development cycle is the testing phase. This is where a developer will be able to know if they have implemented what they are working on correctly. One major question though is "Are the tests written correctly?" Developers can rely on coverage as a metric to determine how much of the system is being executed during the testing phase, but it may not always be a good indicator of the fault detection effectiveness of a test suite. A reason that this could be the case is because a test has not been written very well and creates a scenario that is called a pseudo-tested method. A pseudo-tested method, simply put, is a method that is being used in a test that will never fail. Meaning that the method is being executed, but not tested effectively.
 
 # Current State of the Field
 
 <!-- TODO: Avoid using passive voice like "was defined" and "is written" -->
 
-A pseudo-tested method as an idea was only recently defined in 2016. So,
-unfortunately there are many systems that could have them without knowing. Since
-this is a relatively knew idea, there really are not many ways to detect them,
-the largest way being that of detection by hand. There is a system that can
-detect them automatically, but it is written for Java systems. Therefore
-Function-Fiasco was created, it is an automatic detection system for
-pseudo-tested methods.
+A pseudo-tested method as an idea was only recently defined in 2016. So, unfortunately there are many systems that could have them without knowing. Since this is a relatively knew idea, there really are not many ways to detect them, the largest way being that of detection by hand. There is a system that can detect them automatically, but it is written for Java systems. Therefore Function-Fiasco was created, it is an automatic detection system for pseudo-tested methods.
 
 # What is Function-Fiasco?
 
 <!-- TODO: Go into more details about how this tool works -->
 
-Function-Fiasco uses Python and Pytest to automatically detect whether or not a
-method is being pseudo-tested. It was created because of the loosely-typed
-nature of the Python programming language. However, its main purpose is to show
-that there is always a way to make implementation better, and that understanding
-that building the test suite is part of that implementation could lead to more
-stable systems with a lower chance of crashes.
+Function-Fiasco uses Python and Pytest to automatically detect whether or not a method is being pseudo-tested. It was created because of the loosely-typed nature of the Python programming language. However, its main purpose is to show that there is always a way to make implementation better, and that understanding that building the test suite is part of that implementation could lead to more stable systems with a lower chance of crashes.
